@@ -1,5 +1,7 @@
 package org.swdapModel;
 
+import java.net.URL;
+
 import org.swdapModel.enums.Symbol;
 
 public class DieSide {
@@ -9,6 +11,7 @@ public class DieSide {
   Symbol symbol;
   boolean modifier;
   String fullString;
+  URL dieSideImage;
   
   public String getFullString() {
     return fullString;

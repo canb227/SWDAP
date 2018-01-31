@@ -1,5 +1,7 @@
 package org.swdapModel;
 
+import java.net.URL;
+
 import org.swdapModel.enums.Affiliation;
 import org.swdapModel.enums.Faction;
 import org.swdapModel.enums.Rarity;
@@ -13,9 +15,9 @@ public class Card {
   Faction faction;
   Rarity rarity;
 
-
   CardDie die;
 
+  URL cardImage;
   String subtitle;
 
   int health;
@@ -37,6 +39,8 @@ public class Card {
   boolean has_Die;
   boolean is_unique;
   boolean has_errata;
+  
+  
   public String getName() {
     return name;
   }

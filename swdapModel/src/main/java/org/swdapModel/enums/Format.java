@@ -4,6 +4,7 @@ package org.swdapModel.enums;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+//TODO: Fix URLs!
 public enum Format {
   INFINITE("I", "Infinite", "example.com"),
   STANDARD("S", "Standard", "example.com"),

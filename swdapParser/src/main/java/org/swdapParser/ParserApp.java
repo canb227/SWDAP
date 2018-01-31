@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 import org.swdapModel.Card;
+import org.swdapModel.Library;
 import org.swdapParser.swdestinydbParser.CardDeserializer;
 
 import com.google.gson.Gson;
@@ -35,8 +36,9 @@ public class ParserApp {
     Gson customGson = gsonBuilder.create();
 
     Card[] cards = customGson.fromJson(cardsFile, Card[].class);
+    Library lib = new Library(cards);
     
-    System.out.println(cards[0].getName());
+    System.out.println(cards[0].getDie().getSide0().getFullString());
   }
 
   private static FileReader loadJson(String fileName) throws FileNotFoundException {
